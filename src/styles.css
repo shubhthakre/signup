@@ -1,0 +1,110 @@
+html,
+body,
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-right: 10rem;
+}
+
+p {
+  margin-top: 2em;
+  margin-right: 13rem;
+  margin-bottom: 2em;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+
+.left {
+  width: 70%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+label {
+  position: absolute;
+  top: -1px;
+  left: 20px;
+  background-color: white;
+}
+
+input {
+  padding: 1em;
+  margin: 0.5vw;
+  width: 30em;
+  outline: none;
+  border: 1px solid #bbb;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 5pt 2pt #d3d3d3;
+  outline-width: 0px;
+}
+
+button {
+  margin: 0.5vw;
+  padding: 1em;
+  width: 32em;
+  background-color: rgb(8, 125, 241);
+  border: 1px;
+}
+
+.event {
+  font-size: 0.8rem;
+  padding-left: 13vw;
+  margin-left: 2em;
+  padding-right: 2em;
+}
+
+.dummy {
+  padding-left: 4rem;
+
+  text-justify: center;
+  align-content: center;
+  margin-left: 6em;
+  margin-right: 5em;
+}
+
+h2 {
+  text-align: center;
+}
+
+.selector {
+  padding: 1em;
+  margin: 0.5vw;
+  width: 32em;
+}
+
+@media only screen and (max-width: 600px) {
+  .left {
+    width: 100%;
+  }
+}
+
+.right {
+  border: 2px solid slateblue;
+  width: 38%;
+  height: 100%;
+  background: rgb(8, 125, 241);
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .right {
+    display: none;
+  }
+}
